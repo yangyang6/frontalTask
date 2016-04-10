@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task02</title>
+	<style type="text/css">
+
+		body{
+			margin: 0 auto;
+			padding: 0px;
+			width: 1000px;
+		}
+
+		.nav{
+			width: 100%;
+			height: 60px;
+			background-color: #333333;
+			position: relative;
+		}
+
+		.nav_r{
+			position: absolute;
+			right: 10px;
+			top: 5px;
+		}
+
+		/*
+		去除ul上和li上面的圆点
+		.nav_r ul{
+			list-style: none;
+		}
+		*/
+
+		.nav_r ul li{
+			float: left;
+			margin-left: 18px;
+			/*
+				设置点的颜色，点的颜色貌似不能专门去设置的，要设置点的样式可以去专门做一个图，然后把圆点去掉。
+				<li style="color:#ff0000; font-size:12px<img src="图片地址">list1</li>        以这种形式。
+			*/
+			color: black;
+			font-size: 12px;
+		}
+
+		.nav_r_span{
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<section class="nav">
+		<div class="nav_l">
+			<img src="nav.png" alt="baidu" style="width: 131px;height: 60px;margin-left: 20px">
+		</div>
+		<div class="nav_r">
+			<ul>
+				<li><span class="nav_r_span">导航链接一</span></li>
+				<li><span class="nav_r_span">导航链接二</span></li>
+				<li><span class="nav_r_span">导航链接三</span></li>
+				<li><span class="nav_r_span">导航链接四</span></li>
+			</ul>
+		</div>
+	</section>
+</body>
+</html>
