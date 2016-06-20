@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>task_04</title>
+	<style type="text/css">
+		body{
+			font-family: "微软雅黑";
+  			font-size: 15px;
+  			margin:0px;
+  			padding:0px;
+
+		}
+
+		.container{
+			background-color: #ccc;
+			width:400px;
+			height:200px;
+			margin:500px auto;
+			position:relative;
+			overflow:hidden;
+		}
+
+		.left_circle{
+			width:100px;
+			height:100px;
+			background-color:#fc0;
+			-moz-border-radius: 100px;
+    		-webkit-border-radius: 100px;
+    		border-radius: 100px;
+    		position:absolute;
+    		left:-50px;
+    		top:-50px;
+    		
+		}
+
+		.right_circle{
+			width:100px;
+			height:100px;
+			background-color:#fc0;
+			-moz-border-radius: 100px;
+    		-webkit-border-radius: 100px;
+    		border-radius: 100px;
+    		position:absolute;
+    		right:-50px;
+    		bottom:-50px;
+		}
+
+	</style>
+</head>
+<body>
+	<!--这是最初的版本，但是把居中显示的还有问题，感觉还是container的布局有问题-->
+	<div class="container">
+		<div class="left_circle">
+		</div>
+
+		<div class="right_circle">
+		</div>
+	</div>
+</body>
+</html>
