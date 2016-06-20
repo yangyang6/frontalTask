@@ -8,17 +8,23 @@
 			font-family: "微软雅黑";
   			font-size: 15px;
   			margin:0px;
-  			padding:0px;
-
 		}
+
+  		.main_menu{
+  			position:absolute;
+  			top:50%;
+  			left:50%;
+  			margin-top: -100px;
+  			margin-left: -200px;
+  		}
 
 		.container{
 			background-color: #ccc;
 			width:400px;
 			height:200px;
-			margin:500px auto;
 			position:relative;
 			overflow:hidden;
+
 		}
 
 		.left_circle{
@@ -49,6 +55,7 @@
 	</style>
 </head>
 <body>
+	<div class="main_menu">
 	<!--这是最初的版本，但是把居中显示的还有问题，感觉还是container的布局有问题-->
 	<div class="container">
 		<div class="left_circle">
@@ -56,6 +63,7 @@
 
 		<div class="right_circle">
 		</div>
+	</div>
 	</div>
 </body>
 </html>
