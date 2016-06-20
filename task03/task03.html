@@ -5,21 +5,23 @@
 	<title>task_03</title>
 	<style type="text/css">
 		body{
-			margin:0 auto;
 			padding:20px;
-			
+			font-family: "微软雅黑";
+  			font-size: 15px;
 		}
 
 		.container{
+			margin:0 auto;
+			padding:20px;
 			background-color: #eee;
 			border:1px solid black;
-			height:435px;
-			padding:20px;
+			min-width:600px;
+			overflow:auto;
 		}
 
 		.c1{
 			width:160px;
-			height:100px;
+			height:80px;
 			border:1px solid black;
 			padding:20px;
 			float:left;
@@ -35,19 +37,17 @@
 		}
 
 		.c2{
-			width:80%;
-			min-width:500px;
-			height:30%;
 			border:1px solid black;
-			float:left;
 			background-color:white;
-			margin-left:20px;
+			/*
+				这里的代码很关键，是距离左边和右边的距离。
+			*/
+			margin-left: 220px;
+  			margin-right: 140px;
 		}
 
 		.c3{
-			width:80px;
-			height:390px;
-			padding:20px;
+			width:120px;
 			border:1px solid black;
 			float:right;
 			background-color:white;
@@ -55,7 +55,8 @@
 
 		
 		.c3_person{
-			padding-bottom:20px;
+			display: block;
+  			margin: 20px;
 		}
 
 
@@ -69,7 +70,7 @@
 	<div class="container">
 		<div class="c1">
 			<div class="c1_left">
-				<img src="images/logo.png"/>
+				<img src="images/logo.png" width="80px" height="80px"/>
 			</div>
 			<div class="c1_right">团队名称</div>
 		</div>
@@ -79,16 +80,16 @@
 
 		<div class="c3">
 			<div class="c3_person">
-				<img src="images/logo2.png"/>
+				<img src="images/logo2.png" width="80px" height="80px"/>
 			</div>
 			<div class="c3_person">
-				<img src="images/logo2.png"/>
+				<img src="images/logo2.png" width="80px" height="80px"/>
 			</div>
 			<div class="c3_person">
-				<img src="images/logo2.png"/>
+				<img src="images/logo2.png" width="80px" height="80px"/>
 			</div>
 			<div class="c3_person">
-				<img src="images/logo2.png"/>
+				<img src="images/logo2.png" width="80px" height="80px"/>
 			</div>
 		</div>
 	</div>
