@@ -48,10 +48,9 @@
 
   		footer{
   			border:1px solid black;
-  			position:absolute;
-  			bottom:0px;
-  			left:0px;
-  			height:50px;
+  			width:100%;
+  			height:60px;
+  			line-height:60px;
   		}
 
   		.container{
@@ -105,6 +104,26 @@
   			margin-right:10px;
   		}
 
+  		button{
+  			width:300px;
+  			height:40px;
+  			color:white;
+  			background-color:blue;
+  			font-size:14px;
+  			text-align:center;
+  			-moz-border-radius: 15px;      /* Gecko browsers */
+			-webkit-border-radius: 15px;   /* Webkit browsers */
+			border-radius:15px;            /* W3C syntax */
+  		}
+
+  		.secLi{
+  			height:140;
+  			width:130px;
+  			border:1px solid black;
+  		}
+
+
+
 	</style>
 </head>
 <body>
@@ -151,15 +170,65 @@
 			这是一个很长很长的段落，这是一个很长很长的段落，<a href="#">这里有一个链接到http://ife.baidu.com</a>这是一个很长很的段落，这是一个很长很的段落，<font style="font-weight:bold">这里有个粗体字</font>这是一个很长很长的段<br/>
 			这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。<br/>
 				</section>
+
+
+				<section>
+					<h1>图片</h1>
+					<div>
+						<ul class="secPic">
+							<li class="secLi">
+								<span style="text-align:center">好看的图片</span>
+								<img src="images/secPic.png" width="110px" height="90px"/>
+							</li>
+							<li>
+								<span style="text-align:center">好看的图片</span>
+								<img src="images/secPic.png" width="110px" height="90px"/>
+							</li>
+							<li>
+								<span style="text-align:center">好看的图片</span>
+								<img src="images/secPic.png" width="110px" height="90px"/>
+							</li>
+							<li>
+								<span style="text-align:center">好看的图片</span>
+								<img src="images/secPic.png" width="110px" height="90px"/>
+							</li>
+							<li>
+								<span style="text-align:center">好看的图片</span>
+								<img src="images/secPic.png" width="110px" height="90px"/>
+							</li>
+						</ul>
+					</div>
+				</section>
 			</div>
 			<div class="containerRight">
 				<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
 				<span>请输入邮箱地址</span><input type="text"/><br/>
-				<span style="color:grey;margin-left:120px;margin-top:10px;display:block">邮箱地址要求格式输入</span><br>
+				<span style="color:grey;margin-left:120px;margin-top:10px;display:block">邮箱地址要求格式输入</span><br/>
 				<span>请输入密码</span><input type="password"/><br/>
 				<span>请重复输入密码</span><input type="password"/><br/>
-				<span style="color:grey;margin-left:120px;margin-top:10px;display:block">邮箱地址要求格式输入</span><br>
+				<span style="color:grey;margin-left:120px;margin-top:10px;display:block">邮箱地址要求格式输入</span><br/>
+				性别<input type="radio" name="identity" />男  <input type="radio" name="identity" />女<br/>
+				城市
+					<select>
+					  <option value ="beijing">北京</option>
+					  <option value ="shanghai">上海</option>
+					  <option value="shenzhen">深圳</option>
+					</select>
+				<br/>
+				爱好
+				<input name="hobby" type="checkbox" value="" />运动
+				<input name="hobby" type="checkbox" value="" />艺术
+				<input name="hobby" type="checkbox" value="" />科学
+				<br/>
 
+				<div class="textareaDIV">
+					个人描述
+					<textarea rows="8" cols="30" style="border:none;overflow:hidden">
+						在w3school，你可以找到你所需要的所有的网站建设教程。这是一个很长很长的段落，这是一个很长很长的段落
+					</textarea>
+				</div>
+				<button>确定提交</button>
+				
 			</div>
 		</div>
 		<!--
